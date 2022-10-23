@@ -1,0 +1,246 @@
+/* General styles */
+
+:root {
+  --main-color: #212121;
+  --link-hover-color: #2196f3;
+  --text-grey-color: #757575;
+  --background-second-color: #2f303a;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited,
+a:link {
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Logo styles */
+
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+
+.logo-web {
+  color: #2196f3;
+}
+
+.logo-studio-header {
+  color: #000000;
+}
+
+.logo-studio-footer {
+  color: #ffffff;
+}
+
+/* Nav styles, Contacts */
+
+.active-link:hover {
+  color: #2196f3;
+}
+
+.header-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.02em;
+}
+
+.contacts-header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--text-grey-color);
+}
+
+/* Banner styles */
+
+.main-banner {
+  background-color: var(--background-second-color);
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* About */
+.description,
+.our-activity {
+  background-color: #f5f5f5;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.description-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.desctiption-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--text-grey-color);
+}
+
+/* Our team */
+
+.our-team {
+  background-color: #f5f4fa;
+}
+
+.our-team-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-grey-color);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--background-second-color);
+}
+
+.contacts-footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-footer-address:link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+/* Portfolio page */
+
+.portfolio-block {
+  background-color: #f5f5f5;
+}
+/* Filters */
+
+.portfolio-filter-button,
+.portfolio-filters {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.portfolio-filter-button:focus,
+.portfolio-filter-button:hover {
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* Projects */
+
+.project-box {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+
+  box-sizing: border-box;
+  width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 262px;
+  border: 1px solid #eeeeee;
+}
+
+.project-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--text-grey-color);
+}
+
