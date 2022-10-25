@@ -2,6 +2,7 @@
 
 :root {
   --main-color: #212121;
+  --main-background-color: #ffffff;
   --link-hover-color: #2196f3;
   --text-grey-color: #757575;
   --background-second-color: #2f303a;
@@ -9,8 +10,8 @@
 
 .body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
-  background-color: #ffffff;
+  color: var(--main-color);
+  background-color: var(--main-background-color);
 }
 
 a {
@@ -18,8 +19,9 @@ a {
 }
 
 a:visited,
-a:link {
-  color: inherit;
+a:link,
+a:active {
+  color: var(--main-color);
 }
 
 ul {
@@ -50,9 +52,13 @@ ul {
 }
 
 /* Nav styles, Contacts */
+.current {
+  color: var(--link-hover-color);
+}
 
-.active-link:hover {
-  color: #2196f3;
+.active-link:hover,
+.active-link:focus {
+  color: var(--link-hover-color);
 }
 
 .header-nav {
@@ -115,6 +121,7 @@ h3 {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /* About */
