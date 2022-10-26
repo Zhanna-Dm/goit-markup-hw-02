@@ -7,6 +7,7 @@
   --background-third-color: #f5f4fa;
   --link-hover-color: #2196f3;
   --text-grey-color: #757575;
+  --box-border-color: #eeeeee;
 }
 
 .body {
@@ -25,8 +26,7 @@ a {
 
 a:visited,
 a:link,
-a:active 
-{
+a:active {
   color: var(--main-color);
 }
 
@@ -227,26 +227,30 @@ h3 {
 
 /* Projects */
 
-h2.project-box {
+.project-box h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
 
-  box-sizing: border-box;
-  width: 370px;
-  height: 404px;
-  left: 215px;
-  top: 262px;
-  border: 1px solid #eeeeee;
+  left: 639px;
+  top: 1010px;
 }
 
-p.project-type {
+.project-box {
+box-sizing: border-box;
+width: 370px;
+height: 404px;
+left: 215px;
+top: 262px;
+border: 1px solid var(--box-border-color);
+}
+
+.project-type {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--text-grey-color);
 }
-
