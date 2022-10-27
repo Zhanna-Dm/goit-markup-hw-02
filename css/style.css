@@ -6,6 +6,7 @@
   --background-second-color: #2f303a;
   --background-third-color: #f5f4fa;
   --link-hover-color: #2196f3;
+  --button-hover-background: #188CE8;
   --text-grey-color: #757575;
   --box-border-color: #eeeeee;
 }
@@ -70,7 +71,7 @@ a.current {
   letter-spacing: 0.02em;
 }
 
-.contacts-header {
+.contacts-header a {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -124,6 +125,11 @@ h3 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+}
+
+.order-button:focus,
+.order-button:hover {
+  background-color: var(--button-hover-background);
 }
 
 .visually-hidden {
@@ -215,8 +221,9 @@ h3 {
   font-family: inherit;
 }
 
-/* .portfolio-filter-button:focus, */
-.portfolio-filter-button:hover {
+
+.portfolio-filter-button:hover,
+.portfolio-filter-button:focus {
   color: var(--main-background-color);
   background: var(--link-hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
